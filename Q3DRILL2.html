@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        background-color: rgb(12, 43, 101);
+    }
+
+    #box{
+        border-radius: 10px;
+    }
+
+    #text{
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+
+<div class="container bg-light" style="width: 450px; height: 400px;" id="box">
+    <br>
+    <br>
+    <div class="container" id="text">
+        <h1 class="fst-italic text-dark text-center fs-1" id="head1"></h1>
+    </div>
+
+    <br>
+    <br>
+    <p class="text-center fs-4 text-dark">What is the sum of 9 + 10???</p>
+    <br>
+
+    <p id="result" class="text-center text-dark fw-bold fs-1"></p>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-primary"
+            onclick="document.getElementById('result').innerHTML = a;">
+            Touch Me
+        </button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script>
+        var a = 21;
+        var head_1 = "Basic Calculator";
+        document.getElementById("head1").innerHTML = head_1;
+    </script>
+</div>
+
+</div>
+</body>
+</html>
